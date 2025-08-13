@@ -46,6 +46,8 @@ plugins:
 
 then run: `buf generate --include-imports`
 
+Typically you'd create a separate buf template just for this purpose, e.g. `buf.gen.schema-registry.yaml`, and run it with `buf generate --template buf.gen.schema-registry.yaml --include-imports`.
+
 ## Options
 
 - `schema_registry_url` - The URL to reach the schema registry.
